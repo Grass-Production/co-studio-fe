@@ -1,7 +1,18 @@
 <template>
+  <main>
+    <HeaderView />
     <router-view></router-view>
+  </main>
 </template>
 
-<script></script>
+<script>
+  import HeaderView from '@/components/Navigation/HeaderView.vue';
+
+  export default {
+    components: {
+      HeaderView,
+    },
+  };
+</script>
 
 <style scoped></style>

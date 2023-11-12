@@ -1,7 +1,16 @@
 <template>
-    <h1 class=" font-lato">xinchao</h1>
+  <BannerHomeViewVue />
+  <ServiceViewVue />
+  <FedbackViewVue />
 </template>
 
-<script></script>
+<script>
+  import BannerHomeViewVue from '@/views/Client/home/components/BannerHomeView.vue';
+  import ServiceViewVue from '@/views/Client/home/components/ServiceView.vue';
+  import FedbackViewVue from '@/views/Client/home/components/FeedbackView.vue';
+  export default {
+    components: { BannerHomeViewVue, ServiceViewVue, FedbackViewVue },
+  };
+</script>
 
 <style scoped></style>

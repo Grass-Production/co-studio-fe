@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lato: ['Lato', 'sans-serif'],
+        lato: ['Raleway', 'sans-serif'],
         spectral: ['Spectral', 'serif'],
         bodonimoda: ['Bodoni Moda', 'serif'],
       },
@@ -12,6 +12,7 @@ export default {
         //Primary Color
         DBrowColor: '#3F1D1F',
         pinkColor: '#D5B4B4',
+        lightpinkColor: '#F5EBEB',
         BrowColor: '#867070',
         GutterColor: '#FAF9F7',
         AlabasterColor2: '#FAF9F7',

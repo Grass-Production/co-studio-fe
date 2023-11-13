@@ -2,26 +2,23 @@
   <header>
     <div class="flex justify-between px-28 pt-11 pb-5">
       <div class="flex gap-3">
-        <fb />
-        <ig />
+        <fb :width="24" :height="24" />
+        <ig :width="24" :height="24" />
         <a href="https://m.me/tonyweddingphoto" target="_blank">
-          <mess />
+          <mess :width="24" :height="24" />
         </a>
       </div>
       <div class="">
         <div class="mb-3">
-          <h1 class="text-center font-bodonimoda font-semibold text-main-header text-DBrowColor">Co Studio</h1>
+          <h1 class="text-center font-bodonimoda font-semibold text-[3.5rem] text-DBrowColor">Co Studio</h1>
         </div>
         <div class="flex gap-20">
           <router-link to="/">
             <h4 class="font-lato text-base font-medium text-DBrowColor">TRANG CHỦ</h4>
           </router-link>
-          <router-link to="">
-            <div class="flex items-center gap-x-2">
-              <h1 class="font-lato text-base font-medium text-DBrowColor">DỊCH VỤ</h1>
-              <arrowdown />
-            </div>
-          </router-link>
+          <a href="#fed">
+            <h1 class="font-lato text-base font-medium text-DBrowColor">DỊCH VỤ</h1>
+          </a>
           <router-link to="/album">
             <h4 class="font-lato text-base font-medium text-DBrowColor">ALBUM</h4>
           </router-link>
@@ -53,9 +50,4 @@
   };
 </script>
 
-<style scoped>
-  .text-main-header {
-    font-size: 3.5rem;
-    line-height: 4rem;
-  }
-</style>
+<style scoped></style>

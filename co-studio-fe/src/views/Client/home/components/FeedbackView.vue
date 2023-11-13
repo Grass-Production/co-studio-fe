@@ -1,60 +1,80 @@
 <template>
-  <!-- <div class="parent flex items-center justify-center">
-        <div class=" relative h-screen">
+  <div class="px-28 pt-24 pb-[120px] bg-GutterColor">
+    <div class="text-center mb-9">
+      <h1 class="font-spectral text-[2rem] font-bold text-DBrowColor">PHẢN HỒI TỪ KHÁCH HÀNG</h1>
+      <h4 class="font-lato text-xl font-light text-BrowColor">100% thực hiện bởi Cỏ Studio</h4>
+    </div>
 
-            <div class="div1 relative top-1/2 w-1/3 h-screen">
-                <img class="" src="../images/imgbannercenter.jpg" alt="">
-                <div class="div2 absolute top-2/4 translate-x-full -translate-y-full">
-                    <img class="" src="../images/imgbannercenter.jpg" alt="">
-                </div>
-                <div class="absolute top-2/4 dsd">
-                    <div class="div3 relative">
-                        <img class="" src="../images/imgbannercenter.jpg" alt="">
-                        <div class="div4 absolute top-2/4 translate-x-full -translate-y-full">
-                            <img class="" src="../images/imgbannercenter.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+    <div class="parent bg-WhiteColor py-[3.75rem]">
+      <div class="div1 h-full">
+        <div class="flex relative gap-8 items-end ml-auto mr-auto w-[75%]">
+          <div class="absolute top-[5%] left-[-10%] w-[55%]">
+            <h1 class="font-spectral text-[2rem] font-semibold text-pinkColor">Mọi người nói gì về chúng tôi</h1>
+            <p class="font-lato text-base font-light text-BrowColor">
+              Đám cưới là khoảnh khắc đẹp, đánh dấu sự bắt đầu một hành trình. Cỏ Studio tập trung vào cảm xúc, sự tự
+              nhiên và cất giữ lại những khoảng khắc đẹp.
+            </p>
+          </div>
+          <div
+            class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor"
+            @mouseenter="FeedBack('“ Chụp hình có tâm “')">
+            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+          </div>
+          <div
+            class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[8%]"
+            @mouseenter="FeedBack('“ Chụp hình hình đẹp quá “')">
+            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+          </div>
+          <div
+            class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[16%]"
+            @mouseenter="FeedBack('“ Nhân viên dễ thương “')">
+            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+          </div>
+          <div
+            class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[24%]"
+            @mouseenter="FeedBack('“ Chụp hình có tâm, make-up rất đẹp,\nđội ngũ nhân viên chu đáo. “')">
+            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+          </div>
+          <div v-if="show" class="toast bg-lightpinkColor bottom-[0%] right-[-10%] absolute w-2/4 rounded-2xl">
+            <div class="flex gap-3 items-center pl-6 pt-6 pb-3">
+              <div class="w-16 h-16 imgcard">
+                <img class="" src="../images/imgbannerleft.jpg" alt="" />
+              </div>
+              <div class="w-4/5">
+                <h1 class="font-lato text-[1.25rem] font-light text-DBrowColor">{{ text }}</h1>
+              </div>
             </div>
+            <div class="h-2 w-full rounded-2xl bg-pinkColor"></div>
+          </div>
         </div>
-
-    </div> -->
+      </div>
+    </div>
+  </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    data() {
+      return {
+        show: false,
+        text: '',
+      };
+    },
+    methods: {
+      FeedBack(text) {
+        this.text = text;
+        this.show = true;
+      },
+    },
+  };
+</script>
 
 <style scoped>
-  .dsd {
-    transform: translate(200%, -150%);
-    /* --tw-translate-y: -158%;
-    --tw-translate-x: 200%; */
+  .toast {
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.12);
   }
 
-  /* .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.div1 {
-    grid-area: 5 / 1 / 6 / 2;
-}
-
-.div2 {
-    grid-area: 4 / 2 / 5 / 3;
-}
-
-.div3 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div4 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-.div5 {
-    grid-area: 1 / 5 / 2 / 6;
-} */
+  .imgcard {
+    clip-path: circle(50% at 50% 50%);
+  }
 </style>

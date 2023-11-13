@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#867070] rounded-full w-12 h-12 flex justify-center items-center">
+  <div class="bg">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path
         d="M14.43 18.8191C14.24 18.8191 14.05 18.7491 13.9 18.5991C13.61 18.3091 13.61 17.8291 13.9 17.5391L19.44 11.9991L13.9 6.45914C13.61 6.16914 13.61 5.68914 13.9 5.39914C14.19 5.10914 14.67 5.10914 14.96 5.39914L21.03 11.4691C21.32 11.7591 21.32 12.2391 21.03 12.5291L14.96 18.5991C14.81 18.7491 14.62 18.8191 14.43 18.8191Z"
@@ -10,3 +10,15 @@
     </svg>
   </div>
 </template>
+
+<style scoped>
+  .bg {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #867070;
+    border-radius: 50%;
+  }
+</style>

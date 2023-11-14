@@ -12,7 +12,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Chụp ảnh & <br />
                 phóng sự
               </h1>
@@ -30,7 +30,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Trang điểm <br />
                 cô dâu
               </h1>
@@ -48,7 +48,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Concept <br />
                 chụp
               </h1>

@@ -11,6 +11,7 @@
   "dependencies": {
     "pinia": "^2.1.7",
     "swiper": "^11.0.4",
+    "tw-elements": "^1.0.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },

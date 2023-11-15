@@ -69,39 +69,41 @@
           <div
             v-for="image in imagePsc"
             :key="image.id"
-            class="mb-12 flex gap-9 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
             data-te-lightbox-init>
-            <div class="w-1/2">
+            <div
+              :id="image.id"
+              :key="image.id"
+              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              :class="{ 'col-start-3 col-end-6': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
                 alt="" />
             </div>
-            <div class="w-1/2 grid grid-cols-2 gap-8">
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src1"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src2"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src3"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src4"
-                  alt="" />
-              </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src1"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src2"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src3"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src4"
+                alt="" />
             </div>
           </div>
           <!-- <img :src="image.src" :alt="image.alt"> -->
@@ -120,39 +122,41 @@
           <div
             v-for="image in imageBaby"
             :key="image.id"
-            class="mb-12 flex gap-9 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
             data-te-lightbox-init>
-            <div class="w-1/2">
+            <div
+              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              :key="image.id"
+              :class="{ 'col-start-3 col-end-6': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
                 alt="" />
             </div>
-            <div class="w-1/2 grid grid-cols-2 gap-8">
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src1"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src2"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src3"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src4"
-                  alt="" />
-              </div>
+
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src1"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src2"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src3"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src4"
+                alt="" />
             </div>
           </div>
           <!-- <img :src="image.src" :alt="image.alt"> -->
@@ -171,39 +175,41 @@
           <div
             v-for="image in imageCouple"
             :key="image.id"
-            class="mb-12 flex gap-9 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
             data-te-lightbox-init>
-            <div class="w-1/2">
+            <div
+              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              :key="image.id"
+              :class="{ 'col-start-3 col-end-6': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
                 alt="" />
             </div>
-            <div class="w-1/2 grid grid-cols-2 gap-8">
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src1"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src2"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src3"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src4"
-                  alt="" />
-              </div>
+
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src1"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src2"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src3"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src4"
+                alt="" />
             </div>
           </div>
           <!-- <img :src="image.src" :alt="image.alt"> -->
@@ -222,39 +228,41 @@
           <div
             v-for="image in imagePreWed"
             :key="image.id"
-            class="mb-12 flex gap-9 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
             data-te-lightbox-init>
-            <div class="w-1/2">
+            <div
+              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              :class="{ 'col-start-3 col-end-6': image.visible }"
+              :key="image.id">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
                 alt="" />
             </div>
-            <div class="w-1/2 grid grid-cols-2 gap-8">
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src1"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src2"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src3"
-                  alt="" />
-              </div>
-              <div class="">
-                <img
-                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                  :src="image.src4"
-                  alt="" />
-              </div>
+
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src1"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src2"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src3"
+                alt="" />
+            </div>
+            <div class="">
+              <img
+                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                :src="image.src4"
+                alt="" />
             </div>
           </div>
           <!-- <img :src="image.src" :alt="image.alt"> -->
@@ -275,7 +283,7 @@
   export default {
     data() {
       return {
-        index: 0,
+        index: false,
         images: [
           {
             id: 1,
@@ -285,7 +293,7 @@
             src3: '/src/views/Client/home/images/imgalbum4.png',
             src4: '/src/views/Client/home/images/imgalbum5.png',
             alt: 'Mô tả ảnh đã load trước đó',
-            visible: true,
+            visible: false,
           },
         ],
         imagePsc: [
@@ -297,7 +305,7 @@
             src3: '/src/views/Client/home/images/imgalbum4.png',
             src4: '/src/views/Client/home/images/imgalbum5.png',
             alt: 'Mô tả ảnh đã load trước đó',
-            visible: true,
+            visible: false,
           },
         ],
         imageBaby: [
@@ -309,7 +317,7 @@
             src3: '/src/views/Client/home/images/imgalbum4.png',
             src4: '/src/views/Client/home/images/imgalbum5.png',
             alt: 'Mô tả ảnh đã load trước đó',
-            visible: true,
+            visible: false,
           },
         ],
         imageCouple: [
@@ -321,7 +329,7 @@
             src3: '/src/views/Client/home/images/imgalbum4.png',
             src4: '/src/views/Client/home/images/imgalbum5.png',
             alt: 'Mô tả ảnh đã load trước đó',
-            visible: true,
+            visible: false,
           },
         ],
         imagePreWed: [
@@ -333,7 +341,7 @@
             src3: '/src/views/Client/home/images/imgalbum4.png',
             src4: '/src/views/Client/home/images/imgalbum5.png',
             alt: 'Mô tả ảnh đã load trước đó',
-            visible: true,
+            visible: false,
           },
         ],
         dataimagePsc: [
@@ -432,6 +440,7 @@
     },
     methods: {
       async showMoreImages(data, img) {
+        this.index = !this.index;
         // Mô phỏng việc tải thêm ảnh từ server
         // Thực tế, bạn có thể thực hiện một yêu cầu API để lấy danh sách ảnh mới
         // và sau đó thêm chúng vào mảng images với visible: false
@@ -444,12 +453,12 @@
           src3: data[img.length - 1].src3,
           src4: data[img.length - 1].src4,
           alt: 'Mô tả ảnh mới',
-          visible: false,
+          visible: this.index,
         };
         // Thêm ảnh mới vào mảng images
         img.push(newImage);
         // Hiển thị ảnh mới
-        newImage.visible = true;
+        console.log(newImage);
       },
     },
     mounted() {

@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <div class="px-28 py-[4.75rem]">
+  <main class="bg-GutterColor">
+    <div class="px-28 pb-[4.75rem] pt-9">
       <div class="text-center mb-9">
         <h1 class="font-spectral text-[2rem] font-bold text-DBrowColor">DỊCH VỤ CỎ STUDIO</h1>
         <h4 class="font-lato text-xl font-light text-BrowColor">100% thực hiện bởi Cỏ Studio</h4>
@@ -75,7 +75,7 @@
               :id="image.id"
               :key="image.id"
               class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-6': image.visible }">
+              :class="{ 'col-start-3 col-end-5': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
@@ -127,7 +127,7 @@
             <div
               class="col-start-1 col-end-3 row-start-1 row-end-3"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-6': image.visible }">
+              :class="{ 'col-start-3 col-end-5': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
@@ -180,7 +180,7 @@
             <div
               class="col-start-1 col-end-3 row-start-1 row-end-3"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-6': image.visible }">
+              :class="{ 'col-start-3 col-end-5': image.visible }">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
                 :src="image.src"
@@ -232,7 +232,7 @@
             data-te-lightbox-init>
             <div
               class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-6': image.visible }"
+              :class="{ 'col-start-3 col-end-5': image.visible }"
               :key="image.id">
               <img
                 class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"

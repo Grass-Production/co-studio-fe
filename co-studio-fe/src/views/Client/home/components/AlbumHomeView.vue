@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="bg-GutterColor px-28 pt-36 pb-16">
+    <div class="bg-GutterColor px-28 pt-36 pb-11">
       <div class="flex justify-between" style="height: 65vh">
         <div class="h-full backgroundimg">
           <div class="px-10 pt-14 pb-10 flex flex-col justify-between h-full">

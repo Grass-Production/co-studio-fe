@@ -14,19 +14,19 @@
         </div>
         <div class="flex gap-20">
           <router-link to="/">
-            <h4 class="font-lato text-base font-medium text-DBrowColor">TRANG CHỦ</h4>
+            <h4 class="font-lato text-base font-semibold text-DBrowColor">TRANG CHỦ</h4>
           </router-link>
           <a href="#fed">
-            <h1 class="font-lato text-base font-medium text-DBrowColor">DỊCH VỤ</h1>
+            <h1 class="font-lato text-base font-semibold text-DBrowColor">DỊCH VỤ</h1>
           </a>
           <router-link to="/album">
-            <h4 class="font-lato text-base font-medium text-DBrowColor">ALBUM</h4>
+            <h4 class="font-lato text-base font-semibold text-DBrowColor">ALBUM</h4>
           </router-link>
           <router-link to="/story">
-            <h4 class="font-lato text-base font-medium text-DBrowColor">CÂU CHUYỆN</h4>
+            <h4 class="font-lato text-base font-semibold text-DBrowColor">CÂU CHUYỆN</h4>
           </router-link>
           <router-link to="/contact">
-            <h4 class="font-lato text-base font-medium text-DBrowColor">LIÊN HỆ</h4>
+            <h4 class="font-lato text-base font-semibold text-DBrowColor">LIÊN HỆ</h4>
           </router-link>
         </div>
       </div>

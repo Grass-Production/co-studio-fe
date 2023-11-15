@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="bg-GutterColor px-28 pt-36 pb-16">
+    <div class="bg-GutterColor px-28 pt-36 pb-11">
       <div class="flex justify-between" style="height: 65vh">
         <div class="h-full backgroundimg">
           <div class="px-10 pt-14 pb-10 flex flex-col justify-between h-full">
@@ -12,7 +12,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Chụp ảnh & <br />
                 phóng sự
               </h1>
@@ -30,7 +30,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Trang điểm <br />
                 cô dâu
               </h1>
@@ -48,7 +48,7 @@
                   Đăt ngay
                 </button>
               </div>
-              <h1 class="font-lato text-3xl font-bold text-DBrowColor">
+              <h1 class="font-lato text-[2rem] font-bold text-DBrowColor">
                 Concept <br />
                 chụp
               </h1>

@@ -3,7 +3,7 @@ import { createPinia } from 'pinia';
 import '@/assets/styles/style.css';
 import router from './router';
 import App from './App.vue';
-
+import { Tab, initTE } from 'tw-elements';
 const pinia = createPinia();
 const app = createApp(App);
 

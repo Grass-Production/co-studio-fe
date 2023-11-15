@@ -7,7 +7,7 @@
 
     <div class="parent bg-WhiteColor py-[3.75rem]">
       <div class="div1 h-full">
-        <div class="flex relative gap-8 items-end ml-auto mr-auto w-[75%]">
+        <div data-te-lightbox-init data-te-tab-active class="flex relative gap-8 items-end ml-auto mr-auto w-[75%]">
           <div class="absolute top-[5%] left-[-10%] w-[55%]">
             <h1 class="font-spectral text-[2rem] font-semibold text-pinkColor">Mọi người nói gì về chúng tôi</h1>
             <p class="font-lato text-base font-light text-BrowColor">
@@ -18,22 +18,34 @@
           <div
             class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor"
             @mouseenter="FeedBack('“ Chụp hình có tâm “')">
-            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+            <img
+              class="rounded-[10px] cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="../images/imgbannerleft.jpg"
+              alt="" />
           </div>
           <div
             class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[8%]"
             @mouseenter="FeedBack('“ Chụp hình hình đẹp quá “')">
-            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+            <img
+              class="rounded-[10px] cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="../images/imgbannerleft.jpg"
+              alt="" />
           </div>
           <div
             class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[16%]"
             @mouseenter="FeedBack('“ Nhân viên dễ thương “')">
-            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+            <img
+              class="rounded-[10px] cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="../images/imgbannerleft.jpg"
+              alt="" />
           </div>
           <div
             class="hover:outline-8 hover:outline hover:rounded-[10px] hover:outline-pinkColor mb-[24%]"
             @mouseenter="FeedBack('“ Chụp hình có tâm, make-up rất đẹp,\nđội ngũ nhân viên chu đáo. “')">
-            <img class="rounded-[10px]" src="../images/imgbannerleft.jpg" alt="" />
+            <img
+              class="rounded-[10px] cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="../images/imgbannerleft.jpg"
+              alt="" />
           </div>
           <div v-if="show" class="toast bg-lightpinkColor bottom-[0%] right-[-10%] absolute w-2/4 rounded-2xl">
             <div class="flex gap-3 items-center pl-6 pt-6 pb-3">

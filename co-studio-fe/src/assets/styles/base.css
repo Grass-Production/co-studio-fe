@@ -4,6 +4,11 @@
 /* * {
   font-family: 'Lato', sans-serif;
 } */
+@media (max-width: 1270px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 @media (min-width: 740px) and (max-width: 1023px) {
   html {

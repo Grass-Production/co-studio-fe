@@ -2,8 +2,10 @@
   <main>
     <BannerHomeViewVue />
     <AlbumHomeViewVue />
-    <ServiceViewVue />
-    <FeedbackViewVue id="fed" />
+    <ProminentView />
+    <ServiceViewVue id="fed" />
+    <FilmViewVue />
+    <FeedbackViewVue />
     <ContactViewVue />
   </main>
 </template>
@@ -14,8 +16,18 @@
   import FeedbackViewVue from '@/views/Client/home/components/FeedbackView.vue';
   import ContactViewVue from '@/views/Client/home/components/ContactView.vue';
   import AlbumHomeViewVue from '@/views/Client/home/components/AlbumHomeView.vue';
+  import ProminentView from '@/views/Client/Album/components/ProminentView.vue';
+  import FilmViewVue from '@/views/Client/home/components/FilmView.vue';
   export default {
-    components: { BannerHomeViewVue, AlbumHomeViewVue, ServiceViewVue, FeedbackViewVue, ContactViewVue },
+    components: {
+      BannerHomeViewVue,
+      FilmViewVue,
+      ProminentView,
+      AlbumHomeViewVue,
+      ServiceViewVue,
+      FeedbackViewVue,
+      ContactViewVue,
+    },
   };
 </script>
 

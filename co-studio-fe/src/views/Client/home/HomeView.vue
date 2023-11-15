@@ -3,6 +3,7 @@
     <BannerHomeViewVue />
     <AlbumHomeViewVue />
     <ServiceViewVue />
+    <ProminentView />
     <FeedbackViewVue id="fed" />
     <ContactViewVue />
   </main>
@@ -14,8 +15,9 @@
   import FeedbackViewVue from '@/views/Client/home/components/FeedbackView.vue';
   import ContactViewVue from '@/views/Client/home/components/ContactView.vue';
   import AlbumHomeViewVue from '@/views/Client/home/components/AlbumHomeView.vue';
+  import ProminentView from '@/views/Client/home/components/ProminentView.vue';
   export default {
-    components: { BannerHomeViewVue, AlbumHomeViewVue, ServiceViewVue, FeedbackViewVue, ContactViewVue },
+    components: { BannerHomeViewVue, ProminentView, AlbumHomeViewVue, ServiceViewVue, FeedbackViewVue, ContactViewVue },
   };
 </script>
 

@@ -37,6 +37,9 @@
             <div class="w-full">
               <input
                 pattern="^[^*#&]+$"
+                :class="{
+                  ' outline-red-700 outline-2 rounded outline': inputFullName.error,
+                }"
                 v-model="inputFullName.value"
                 class="peer px-5 w-full py-3 bg-lightpinkColor"
                 type="text"
@@ -46,6 +49,9 @@
             <div class="w-full">
               <input
                 pattern="^[a-zA-Z0-9._%+-]+@(gmail\.com|gmail\.com\.vn)$"
+                :class="{
+                  ' outline-red-700 outline-2 rounded outline': inputEmail.error,
+                }"
                 v-model="inputEmail.value"
                 class="peer px-5 w-full py-3 bg-lightpinkColor"
                 type="email"
@@ -63,6 +69,7 @@
               rows="4"></textarea>
             <button
               type="submit"
+              @click="Run()"
               class="w-2/5 rounded mx-auto font-lato text-xl font-semibold text-WhiteColor py-[0.875rem] bg-DBrowColor">
               Liên hệ
             </button>
@@ -87,6 +94,7 @@
       return {
         inputFullName: {
           value: '',
+          error: false,
         },
         inputEmail: {
           value: '',
@@ -95,6 +103,10 @@
       };
     },
     methods: {
+      Run() {
+        this.CheckInputEmail();
+        this.CheckinputFullName();
+      },
       CheckInputEmail() {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@(gmail\.com|gmail\.com\.vn)$/;
         if (!emailPattern.test(this.inputEmail.value)) {

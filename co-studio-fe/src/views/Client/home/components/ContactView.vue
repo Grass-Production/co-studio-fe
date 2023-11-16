@@ -20,9 +20,9 @@
             <div class="mb-8 w-[10.5rem] h-[0.5px] bg-BrowColor"></div>
             <h3 class="mb-2 font-lato text-xl font-bold text-DBrowColor">Theo dõi</h3>
             <div class="flex gap-6 items-center">
-              <fb :width="32" :height="32" />
-              <ig :width="32" :height="32" />
-              <mess :width="32" :height="32" />
+              <fb :width="32" :height="32" :color="`#867070`" />
+              <ig :width="32" :height="32" :color="`#867070`" />
+              <mess :width="32" :height="32" :color="`#867070`" />
               <zalo />
             </div>
           </div>

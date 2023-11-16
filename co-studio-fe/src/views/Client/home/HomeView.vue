@@ -3,7 +3,7 @@
     <BannerHomeViewVue />
     <AlbumHomeViewVue />
     <ProminentView />
-    <ServiceViewVue id="fed" />
+    <ServiceViewVue id="service" />
     <FilmViewVue />
     <FeedbackViewVue />
     <ContactViewVue />

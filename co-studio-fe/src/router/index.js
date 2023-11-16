@@ -37,6 +37,7 @@ const routes = [
 const router = vueRouter.createRouter({
   history: vueRouter.createWebHistory(),
   routes: routes,
+  linkActiveClass: 'active-link-css',
 
   // Cuộn lên đầu trang khi chuyển Route
   scrollBehavior(to, from, savedPosition) {

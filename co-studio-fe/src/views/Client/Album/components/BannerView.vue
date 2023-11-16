@@ -26,9 +26,12 @@
           <h4 class="font-lato text-xl font-light text-DBrowColor">By Cỏ Studio Team</h4>
         </div>
         <div class="">
-          <button class="rounded font-lato text-xl font-semibold text-lightpinkColor px-14 py-[0.875rem] bg-DBrowColor">
-            Liên hệ
-          </button>
+          <router-link to="/#contact">
+            <button
+              class="rounded font-lato text-xl font-semibold text-lightpinkColor px-14 py-[0.875rem] bg-DBrowColor">
+              Liên hệ
+            </button>
+          </router-link>
         </div>
       </div>
     </div>

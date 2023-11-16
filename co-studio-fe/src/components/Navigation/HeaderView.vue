@@ -42,11 +42,12 @@
             :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
             CÂU CHUYỆN
           </router-link>
-          <router-link
-            to="/contact"
-            class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
-            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
-            LIÊN HỆ
+          <router-link to="/#contact" style="border: none">
+            <h1
+              class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+              :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+              LIÊN HỆ
+            </h1>
           </router-link>
         </div>
       </div>

@@ -13,6 +13,7 @@ export default {
         DBrowColor: '#3F1D1F',
         pinkColor: '#D5B4B4',
         lightpinkColor: '#F5EBEB',
+        lpinkColor: '#E4D0D0',
         BrowColor: '#867070',
         GutterColor: '#FAF9F7',
         AlabasterColor2: '#FAF9F7',

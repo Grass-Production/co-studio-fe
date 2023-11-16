@@ -6,7 +6,7 @@
     <ServiceViewVue id="service" />
     <FilmViewVue />
     <FeedbackViewVue />
-    <ContactViewVue />
+    <ContactViewVue id="contact" />
   </main>
 </template>
 

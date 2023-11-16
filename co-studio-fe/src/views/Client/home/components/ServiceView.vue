@@ -12,7 +12,7 @@
         <li role="presentation" class="w-32 text-center">
           <a
             href="#home"
-            class="my-2 font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
+            class="my-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
             data-te-toggle="pill"
             data-te-target="#home"
             data-te-nav-active
@@ -25,7 +25,7 @@
         <li role="presentation" class="w-32 text-center">
           <a
             href="#tabs-profile"
-            class="my-2 font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
+            class="my-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
             data-te-toggle="pill"
             data-te-target="#tabs-profile"
             role="tab"
@@ -37,7 +37,7 @@
         <li role="presentation" class="w-32 text-center">
           <a
             href="#tabs-messages"
-            class="my-2 font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
+            class="my-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
             data-te-toggle="pill"
             data-te-target="#tabs-messages"
             role="tab"
@@ -49,7 +49,7 @@
         <li role="presentation" class="w-32 text-center">
           <a
             href="#tabs-contact"
-            class="my-2 font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
+            class="my-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor font-lato text-base font-bold text-pinkColor block border-b-2 border-t-0 border-transparent hover:isolate hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-DBrowColor data-[te-nav-active]:text-DBrowColor dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-DBrowColor-400 dark:data-[te-nav-active]:text-DBrowColor-400"
             data-te-toggle="pill"
             data-te-target="#tabs-contact"
             role="tab"

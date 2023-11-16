@@ -2,38 +2,62 @@
   <header>
     <div class="flex justify-between px-28 pt-11 pb-5">
       <div class="flex gap-3">
-        <fb :width="24" :height="24" />
-        <ig :width="24" :height="24" />
+        <fb :width="24" :height="24" :color="HeaderClass ? `#FAF9F7` : `#867070`" />
+        <ig :width="24" :height="24" :color="HeaderClass ? `#FAF9F7` : `#867070`" />
         <a href="https://m.me/tonyweddingphoto" target="_blank">
-          <mess :width="24" :height="24" />
+          <mess :width="24" :height="24" :color="HeaderClass ? `#FAF9F7` : `#867070`" />
         </a>
       </div>
       <div class="">
         <div class="mb-3">
-          <h1 class="text-center font-bodonimoda font-semibold text-[3.5rem] text-DBrowColor">Co Studio</h1>
+          <h1
+            class="text-center font-bodonimoda font-semibold text-[3.5rem]"
+            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+            Co Studio
+          </h1>
         </div>
-        <div class="flex gap-20">
-          <router-link to="/">
-            <h4 class="font-lato text-base font-semibold text-DBrowColor">TRANG CHỦ</h4>
+        <div id="nav" class="flex gap-20">
+          <router-link
+            to="/"
+            class="focus:isolate font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+            TRANG CHỦ
           </router-link>
-          <a href="#fed">
-            <h1 class="font-lato text-base font-semibold text-DBrowColor">DỊCH VỤ</h1>
-          </a>
-          <router-link to="/album">
-            <h4 class="font-lato text-base font-semibold text-DBrowColor">ALBUM</h4>
+          <router-link to="/#service" style="border: none">
+            <h1
+              class="font-lato hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+              :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+              DỊCH VỤ
+            </h1>
           </router-link>
-          <router-link to="/story">
-            <h4 class="font-lato text-base font-semibold text-DBrowColor">CÂU CHUYỆN</h4>
+          <router-link
+            to="/album"
+            class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+            ALBUM
           </router-link>
-          <router-link to="/contact">
-            <h4 class="font-lato text-base font-semibold text-DBrowColor">LIÊN HỆ</h4>
+          <router-link
+            to="/story"
+            class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+            CÂU CHUYỆN
+          </router-link>
+          <router-link
+            to="/contact"
+            class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
+            :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
+            LIÊN HỆ
           </router-link>
         </div>
       </div>
       <div class="flex gap-6">
-        <h4>VN</h4>
-        <h4>|</h4>
-        <h4>EN</h4>
+        <h4 class="font-lato text-xl font-bold" :class="HeaderClass ? '  text-lightpinkColor' : 'text-BrowColor'">
+          VN
+        </h4>
+        <h4 class="font-lato text-xl font-bold" :class="HeaderClass ? '  text-lightpinkColor' : 'text-BrowColor'">|</h4>
+        <h4 class="font-lato text-xl font-bold" :class="HeaderClass ? '  text-lightpinkColor' : 'text-BrowColor'">
+          EN
+        </h4>
       </div>
     </div>
   </header>
@@ -47,7 +71,23 @@
 
   export default {
     components: { fb, ig, mess, arrowdown },
+    data() {
+      return {
+        show: true,
+      };
+    },
+    methods: {},
+    computed: {
+      HeaderClass() {
+        return this.$route.path == '/album';
+      },
+    },
   };
 </script>
 
-<style scoped></style>
+<style>
+  #nav .active-link-css {
+    border-bottom: 2px solid #3f1d1f;
+    color: #3f1d1f;
+  }
+</style>

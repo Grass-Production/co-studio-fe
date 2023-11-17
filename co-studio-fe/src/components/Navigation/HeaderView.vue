@@ -10,15 +10,13 @@
       </div>
       <div class="">
         <div class="mb-3">
-          <h1
-            class="text-center font-bodonimoda font-semibold text-[3.5rem]"
+          <h1 class="text-center font-bodonimoda font-semibold text-[3.5rem]"
             :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
             Co Studio
           </h1>
         </div>
         <div id="nav" class="flex gap-20">
-          <router-link
-            to="/"
+          <router-link to="/"
             class="focus:isolate font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
             :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
             TRANG CHỦ
@@ -30,14 +28,12 @@
               DỊCH VỤ
             </h1>
           </router-link>
-          <router-link
-            to="/album"
+          <router-link to="/album"
             class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
             :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
             ALBUM
           </router-link>
-          <router-link
-            to="/story"
+          <router-link to="/story"
             class="font-lato border-transparent border-b-2 hover:text-DBrowColor hover:border-b-2 hover:border-DBrowColor focus:text-DBrowColor focus:border-b-2 focus:border-DBrowColor text-base font-semibold"
             :class="HeaderClass ? ' text-AlabasterColor2' : 'text-DBrowColor'">
             CÂU CHUYỆN
@@ -65,30 +61,30 @@
 </template>
 
 <script>
-  import fb from '@public/icon/fb.svg.vue';
-  import ig from '@public/icon/ig.svg.vue';
-  import mess from '@public/icon/mess.svg.vue';
-  import arrowdown from '@public/icon/arrowdown.svg.vue';
+import fb from '@public/icon/fb.svg.vue';
+import ig from '@public/icon/ig.svg.vue';
+import mess from '@public/icon/mess.svg.vue';
+import arrowdown from '@public/icon/arrowdown.svg.vue';
 
-  export default {
-    components: { fb, ig, mess, arrowdown },
-    data() {
-      return {
-        show: true,
-      };
+export default {
+  components: { fb, ig, mess, arrowdown },
+  data() {
+    return {
+      show: true,
+    };
+  },
+  methods: {},
+  computed: {
+    HeaderClass() {
+      return this.$route.path == '/album';
     },
-    methods: {},
-    computed: {
-      HeaderClass() {
-        return this.$route.path == '/album';
-      },
-    },
-  };
+  },
+};
 </script>
 
 <style>
-  #nav .active-link-css {
-    border-bottom: 2px solid #3f1d1f;
-    color: #3f1d1f;
-  }
+#nav .active-link-css {
+  border-bottom: 2px solid #3f1d1f;
+  color: #3f1d1f;
+}
 </style>

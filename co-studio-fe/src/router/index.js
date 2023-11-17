@@ -15,13 +15,11 @@ const routes = [
     path: '/album',
     name: 'Album | Cỏ Studio',
     component: () => import('@/views/Client/Album/AlbumView.vue'),
-    children: [
-      {
-        path: ':albumname',
-        name: ':albumname',
-        component: () => import('@/views/Client/Album/AlbumDtail/DamCuoiView.vue'),
-      },
-    ],
+  },
+  {
+    path: '/album/:albumname',
+    name: 'Album Dtail | Cỏ Studio',
+    component: () => import('@/views/Client/Album/AlbumDtail/DamCuoiView.vue'),
   },
   {
     path: '/story',

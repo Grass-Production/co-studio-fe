@@ -1,13 +1,16 @@
 <template>
-  <h1>xin chao</h1>
-  <h2>{{ data }}</h2>
+  <BannerViewVue />
+  <HightlineViewVue />
+  <AllalbumViewVue />
 </template>
+
 <script>
-  export default {
-    props: {
-      data: Array,
-    },
-  };
+import BannerViewVue from '@/views/Client/Album/AlbumDtail/components/BannerView.vue';
+import HightlineViewVue from '@/views/Client/Album/AlbumDtail/components/HightlineView.vue';
+import AllalbumViewVue from '@/views/Client/Album/AlbumDtail/components/AllalbumView.vue';
+export default {
+  components: { BannerViewVue, HightlineViewVue, AllalbumViewVue },
+};
 </script>
 
-<style></style>
+<style scoped></style>

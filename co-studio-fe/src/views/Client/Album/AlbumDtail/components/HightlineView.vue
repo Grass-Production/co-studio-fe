@@ -32,6 +32,7 @@
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Navigation } from 'swiper/modules';
+import { AlbumAll } from '@/constants/index.js'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -47,54 +48,7 @@ export default {
   data() {
     return {
       modules: [Pagination, Navigation],
-      albums: [
-        {
-          id: 1,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album1.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album1.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album1.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img4album1.png',
-        },
-        {
-          id: 2,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album2.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album2.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album2.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img4album2.png',
-        },
-        {
-          id: 3,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album3.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album3.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album3.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img2album3.png',
-
-        },
-        {
-          id: 4,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album4.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album4.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album4.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img2album4.png',
-
-        },
-        {
-          id: 5,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album5.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album5.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album5.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img2album5.png',
-
-        },
-        {
-          id: 6,
-          imgbg: '/src/views/Client/Album/AlbumDtail/images/img1album3.png',
-          imgbg2: '/src/views/Client/Album/AlbumDtail/images/img2album3.png',
-          imgbg3: '/src/views/Client/Album/AlbumDtail/images/img3album3.png',
-          imgbg4: '/src/views/Client/Album/AlbumDtail/images/img2album3.png',
-
-        },
-      ]
+      albums: AlbumAll,
     }
   },
 };

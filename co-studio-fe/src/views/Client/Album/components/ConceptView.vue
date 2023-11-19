@@ -5,12 +5,14 @@
       <h4 class="font-lato text-xl font-light text-BrowColor">100% thực hiện bởi Cỏ Studio</h4>
     </div>
     <div class="grid grid-cols-3 gap-8 w-1/2 mx-auto">
-      <div class="" v-for="x in albums">
-        <router-link :to="`/album/${x.category}`">
-          <div :id="x.id" :style="{ background: 'url(' + x.imgbg + ')' }"
+      <div class="" v-for="(x, i) in img">
+        <router-link :to="`/album/${key[i]}`">
+          <div
+            :id="x.id"
+            :style="{ backgroundImage: 'url(' + x.imgbg + ')' }"
             class="rounded flex flex-col justify-end items-start bg-[url('src/views/Client/Album/images/imgbanner.jpg')] bg-no-repeat bg-center bg-cover h-[32vh]">
             <h1 class="rounded font-lato text-xl font-semibold text-BrowColor px-11 py-2 bg-lightpinkColor">
-              {{ x.category }}
+              {{ key[i] }}
             </h1>
           </div>
         </router-link>
@@ -20,51 +22,31 @@
 </template>
 
 <script>
-import imgconceptdamcuoi from '../images/imgconcept.jpg'
-import imgconceptembe from '../images/imgconcept2.jpg'
-import imgconceptprewedding from '../images/imgconcept3.jpg'
-import imgconceptngoaicanh from '../images/imgconcept4.jpg'
-import imgconceptcouple from '../images/imgconcept5.jpg'
-import imgconceptgiadinh from '../images/imgconcept6.jpg'
+  import { Concepts } from '../../../../constants';
 
-export default {
-  data() {
-    return {
-      albums: [
-        {
-          id: 1,
-          imgbg: imgconceptdamcuoi,
-          category: 'Đám cưới',
-        },
-        {
-          id: 2,
-          imgbg: imgconceptembe,
-          category: 'Em bé',
-        },
-        {
-          id: 3,
-          imgbg: imgconceptprewedding,
-          category: 'Pre-wedding',
-        },
-        {
-          id: 4,
-          imgbg: imgconceptngoaicanh,
-          category: 'Ngoại cảnh',
-        },
-        {
-          id: 5,
-          imgbg: imgconceptcouple,
-          category: 'Cặp đôi',
-        },
-        {
-          id: 6,
-          imgbg: imgconceptgiadinh,
-          category: 'Gia đình',
-        },
-      ],
-    };
-  },
-};
+  export default {
+    data() {
+      return {
+        concepts: Concepts,
+        key: [],
+        img: [],
+      };
+    },
+    props: {
+      data: Array,
+    },
+    methods: {},
+    mounted() {
+      for (let index = 0; index < this.concepts.length; index++) {
+        const element = this.concepts[index];
+        this.key = Object.keys(element);
+        console.log(this.key);
+        this.img = element[this.key[index]];
+        console.log(this.img[index].imgbg);
+      }
+      console.log(this.data[0]);
+    },
+  };
 </script>
 
 <style scoped></style>

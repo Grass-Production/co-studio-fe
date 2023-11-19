@@ -11,17 +11,13 @@
       </div>
       <div class="h-[32vh] grid grid-cols-3 w-1/2">
         <div
-          class="h-full border-4 border-lpinkColor rounded-lg -rotate-[20deg] bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner.jpg')] bg-no-repeat bg-center bg-cover">
-        </div>
+          class="h-full border-4 border-lpinkColor rounded-lg -rotate-[20deg] bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner.jpg')] bg-no-repeat bg-center bg-cover"></div>
         <div
-          class="h-full border-4 border-lpinkColor rounded-lg bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner2.jpg')] bg-no-repeat bg-center bg-cover">
-        </div>
+          class="h-full border-4 border-lpinkColor rounded-lg bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner2.jpg')] bg-no-repeat bg-center bg-cover"></div>
         <div
-          class="h-full border-4 border-lpinkColor rounded-lg -rotate-[20deg] bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner3.jpg')] bg-no-repeat bg-center bg-cover">
-        </div>
+          class="h-full border-4 border-lpinkColor rounded-lg -rotate-[20deg] bg-[url('/src/views/Client/Album/AlbumDtail/images/imgbanner3.jpg')] bg-no-repeat bg-center bg-cover"></div>
       </div>
     </div>
-
   </main>
 </template>
 

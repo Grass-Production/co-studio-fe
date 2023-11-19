@@ -22,6 +22,11 @@ const routes = [
     component: () => import('@/views/Client/Album/AlbumDtail/DamCuoiView.vue'),
   },
   {
+    path: '/album/:name/:image',
+    name: 'Images | Cỏ Studio',
+    component: () => import('@/views/Client/Album/AlbumDtail/ImageView.vue'),
+  },
+  {
     path: '/story',
     name: 'Câu chuyện | Cỏ Studio',
     component: () => import('@/views/Client/Story/StoryView.vue'),

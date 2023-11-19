@@ -23,6 +23,311 @@ import img2album5 from '../views/Client/Album/AlbumDtail/images/img2album5.png';
 import img3album5 from '../views/Client/Album/AlbumDtail/images/img3album5.png';
 import img4album5 from '../views/Client/Album/AlbumDtail/images/img2album5.png';
 
+export const Concepts = [
+  {
+    DamCuoi: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+    EmBe: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+    Prewedding: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+    NgoaiCanh: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+    CapDoi: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+    GiaDinh: [
+      {
+        id: 1,
+        imgbg: img1album1,
+        imgbg2: img2album1,
+        imgbg3: img3album1,
+        imgbg4: img4album1,
+        name: 'album1',
+      },
+      {
+        id: 2,
+        imgbg: img1album2,
+        imgbg2: img2album2,
+        imgbg3: img3album2,
+        imgbg4: img4album2,
+        name: 'album2',
+      },
+      {
+        id: 3,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+      {
+        id: 4,
+        imgbg: img1album4,
+        imgbg2: img2album4,
+        imgbg3: img3album4,
+        imgbg4: img4album4,
+        name: 'album4',
+      },
+      {
+        id: 5,
+        imgbg: img1album5,
+        imgbg2: img2album5,
+        imgbg3: img3album5,
+        imgbg4: img4album5,
+        name: 'album5',
+      },
+      {
+        id: 6,
+        imgbg: img1album3,
+        imgbg2: img2album3,
+        imgbg3: img3album3,
+        imgbg4: img4album3,
+        name: 'album3',
+      },
+    ],
+  },
+];
+
 export const AlbumAll = [
   {
     id: 1,
@@ -30,6 +335,7 @@ export const AlbumAll = [
     imgbg2: img2album1,
     imgbg3: img3album1,
     imgbg4: img4album1,
+    name: 'album1',
   },
   {
     id: 2,
@@ -37,6 +343,7 @@ export const AlbumAll = [
     imgbg2: img2album2,
     imgbg3: img3album2,
     imgbg4: img4album2,
+    name: 'album2',
   },
   {
     id: 3,
@@ -44,6 +351,7 @@ export const AlbumAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 4,
@@ -51,6 +359,7 @@ export const AlbumAll = [
     imgbg2: img2album4,
     imgbg3: img3album4,
     imgbg4: img4album4,
+    name: 'album4',
   },
   {
     id: 5,
@@ -58,6 +367,7 @@ export const AlbumAll = [
     imgbg2: img2album5,
     imgbg3: img3album5,
     imgbg4: img4album5,
+    name: 'album5',
   },
   {
     id: 6,
@@ -65,6 +375,7 @@ export const AlbumAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
 ];
 
@@ -75,6 +386,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album1,
     imgbg3: img3album1,
     imgbg4: img4album1,
+    name: 'album1',
   },
   {
     id: 8,
@@ -82,6 +394,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album2,
     imgbg3: img3album2,
     imgbg4: img4album2,
+    name: 'album2',
   },
   {
     id: 9,
@@ -89,6 +402,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 10,
@@ -96,6 +410,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album4,
     imgbg3: img3album4,
     imgbg4: img4album4,
+    name: 'album4',
   },
   {
     id: 11,
@@ -103,6 +418,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album5,
     imgbg3: img3album5,
     imgbg4: img4album5,
+    name: 'album5',
   },
   {
     id: 12,
@@ -110,6 +426,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 9,
@@ -117,6 +434,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 7,
@@ -124,6 +442,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album1,
     imgbg3: img3album1,
     imgbg4: img4album1,
+    name: 'album1',
   },
   {
     id: 11,
@@ -131,6 +450,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album5,
     imgbg3: img3album5,
     imgbg4: img4album5,
+    name: 'album5',
   },
   {
     id: 8,
@@ -138,6 +458,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album2,
     imgbg3: img3album2,
     imgbg4: img4album2,
+    name: 'album2',
   },
   {
     id: 12,
@@ -145,6 +466,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 10,
@@ -152,6 +474,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album4,
     imgbg3: img3album4,
     imgbg4: img4album4,
+    name: 'album4',
   },
   {
     id: 8,
@@ -159,6 +482,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album2,
     imgbg3: img3album2,
     imgbg4: img4album2,
+    name: 'album2',
   },
   {
     id: 9,
@@ -166,6 +490,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album3,
     imgbg3: img3album3,
     imgbg4: img4album3,
+    name: 'album3',
   },
   {
     id: 10,
@@ -173,6 +498,7 @@ export const AlbumLoadAll = [
     imgbg2: img2album4,
     imgbg3: img3album4,
     imgbg4: img4album4,
+    name: 'album4',
   },
   {
     id: 11,
@@ -180,5 +506,6 @@ export const AlbumLoadAll = [
     imgbg2: img2album5,
     imgbg3: img3album5,
     imgbg4: img4album5,
+    name: 'album5',
   },
 ];

@@ -1,12 +1,11 @@
 <template>
   <main>
     <div
-      class="absolute -z-10 w-full top-0 h-[100vh] bg-[url('/src/views/Client/Album/images/bgbanner.jpg')] bg-no-repeat bg-center bg-cover">
-    </div>
+      class="absolute -z-10 w-full top-0 h-[100vh] bg-[url('/src/views/Client/Album/images/bgbanner.jpg')] bg-no-repeat bg-center bg-cover"></div>
     <div class="px-28">
       <div class="pt-4 grid grid-cols-3 h-[40vh]">
-        <div class="w-full bg-[url('/src/views/Client/Album/images/imgbanner.jpg')] bg-no-repeat bg-center bg-cover">
-        </div>
+        <div
+          class="w-full bg-[url('/src/views/Client/Album/images/imgbanner.jpg')] bg-no-repeat bg-center bg-cover"></div>
         <div class="flex justify-center items-center bg-white">
           <div class=" ">
             <h2 class="mb-1 font-lato text-base font-medium text-BrowColor tracking-[0.64em]">WEDDING</h2>
@@ -18,8 +17,8 @@
             </p>
           </div>
         </div>
-        <div class="w-full bg-[url('/src/views/Client/Album/images/imgbanner2.jpg')] bg-no-repeat bg-center bg-cover">
-        </div>
+        <div
+          class="w-full bg-[url('/src/views/Client/Album/images/imgbanner2.jpg')] bg-no-repeat bg-center bg-cover"></div>
       </div>
       <div class="mb-[23vh] flex justify-between items-center bg-GutterColor px-12 py-10">
         <div class="">
@@ -28,7 +27,8 @@
         </div>
         <div class="">
           <router-link to="/#contact">
-            <button class="rounded font-lato text-xl font-semibold text-lightpinkColor px-14 py-[0.875rem] bg-DBrowColor">
+            <button
+              class="rounded font-lato text-xl font-semibold text-lightpinkColor px-14 py-[0.875rem] bg-DBrowColor">
               Liên hệ
             </button>
           </router-link>

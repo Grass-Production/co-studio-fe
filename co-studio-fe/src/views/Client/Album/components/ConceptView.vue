@@ -20,38 +20,45 @@
 </template>
 
 <script>
+import imgconceptdamcuoi from '../images/imgconcept.jpg'
+import imgconceptembe from '../images/imgconcept2.jpg'
+import imgconceptprewedding from '../images/imgconcept3.jpg'
+import imgconceptngoaicanh from '../images/imgconcept4.jpg'
+import imgconceptcouple from '../images/imgconcept5.jpg'
+import imgconceptgiadinh from '../images/imgconcept6.jpg'
+
 export default {
   data() {
     return {
       albums: [
         {
           id: 1,
-          imgbg: '/src/views/Client/Album/images/imgconcept.jpg',
+          imgbg: imgconceptdamcuoi,
           category: 'Đám cưới',
         },
         {
           id: 2,
-          imgbg: '/src/views/Client/Album/images/imgconcept2.jpg',
+          imgbg: imgconceptembe,
           category: 'Em bé',
         },
         {
           id: 3,
-          imgbg: '/src/views/Client/Album/images/imgconcept3.jpg',
+          imgbg: imgconceptprewedding,
           category: 'Pre-wedding',
         },
         {
           id: 4,
-          imgbg: '/src/views/Client/Album/images/imgconcept4.jpg',
+          imgbg: imgconceptngoaicanh,
           category: 'Ngoại cảnh',
         },
         {
           id: 5,
-          imgbg: '/src/views/Client/Album/images/imgconcept5.jpg',
+          imgbg: imgconceptcouple,
           category: 'Cặp đôi',
         },
         {
           id: 6,
-          imgbg: '/src/views/Client/Album/images/imgconcept6.jpg',
+          imgbg: imgconceptgiadinh,
           category: 'Gia đình',
         },
       ],

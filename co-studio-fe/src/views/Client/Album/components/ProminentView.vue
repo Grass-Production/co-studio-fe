@@ -4,41 +4,29 @@
       <h1 class="font-spectral text-[2rem] font-bold text-DBrowColor">NỔI BẬT</h1>
       <h4 class="font-lato text-xl font-light text-BrowColor">100% thực hiện bởi Cỏ Studio</h4>
     </div>
-    <div data-te-lightbox-init class="grid grid-cols-4 gap-8 px-28 items-center">
-      <div class="col-start-1 col-end-3">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinebig.png"
+    <div data-te-lightbox-init class="grid grid-cols-4 gap-8 px-28 items-center ">
+      <div class=" overflow-hidden col-start-1 col-end-3">
+        <img class=" w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinebig.png"
           alt="" />
       </div>
-      <div class="">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinesmall.png"
+      <div class="  overflow-hidden ">
+        <img class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinesmall.png"
           alt="" />
       </div>
-      <div class="">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinesmall2.png"
+      <div class="  overflow-hidden ">
+        <img class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinesmall2.png"
           alt="" />
       </div>
-      <div class="col-start-3 col-end-5 row-start-2">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinebig2.png"
+      <div class="  overflow-hidden col-start-3 col-end-5 row-start-2">
+        <img class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinebig2.png"
           alt="" />
       </div>
-      <div class="">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinesmall3.png"
+      <div class="  overflow-hidden ">
+        <img class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinesmall3.png"
           alt="" />
       </div>
-      <div class="">
-        <img
-          class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor"
-          src="../images/imghightlinesmall4.png"
+      <div class="  overflow-hidden ">
+        <img class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor" src="../images/imghightlinesmall4.png"
           alt="" />
       </div>
     </div>

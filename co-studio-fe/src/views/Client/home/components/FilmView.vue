@@ -8,19 +8,13 @@
     <div class="grid grid-cols-4 gap-8 mb-16">
       <div class="" v-for="(x, i) in dataclip">
         <div @click="ShowPopUp(x.url)">
-          <div
-            class="rounded h-48 w-full flex justify-center items-center"
+          <div class="rounded h-48 w-full flex justify-center items-center"
             :style="{ background: 'url(' + x.img + ') center/cover no-repeat' }">
             <pausesvg />
-            <div
-              v-if="showPopUp"
-              class="z-50 w-full fixed top-0 left-0 min-h-screen flex justify-center items-center"
+            <div v-if="showPopUp" class="z-50 w-full fixed top-0 left-0 min-h-screen flex justify-center items-center"
               style="background-color: rgba(0, 0, 0, 0.295)">
               <div :key="x.id" @click="ShowPopUp(x.url)">
-                <iframe
-                  class="w-[60vw] h-[70vh]"
-                  :src="url"
-                  title="Một chiều thu - Tỏi ft. Trazik | (Prod. Pieper Beats)"
+                <iframe class="w-[60vw] h-[70vh]" :src="url" title="Một chiều thu - Tỏi ft. Trazik | (Prod. Pieper Beats)"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen>
@@ -39,48 +33,51 @@
 </template>
 
 <script>
-  import pausesvg from '@public/icon/pause.svg.vue';
-  export default {
-    components: { pausesvg },
-    data() {
-      return {
-        showPopUp: false,
-        url: '',
-        dataclip: [
-          {
-            id: 1,
-            img: '/src/views/Client/home/images/imgalbum1.jpg',
-            url: 'https://www.youtube.com/embed/sEdlWPbjgsg',
-          },
-          {
-            id: 2,
-            img: '/src/views/Client/home/images/imgalbum2.png',
-            url: 'https://www.youtube.com/embed/2CLp4rKHvx8',
-          },
-          {
-            id: 3,
-            img: '/src/views/Client/home/images/imgalbum3.png',
-            url: 'https://www.youtube.com/embed/wwyiBgNjBrE',
-          },
-          {
-            id: 4,
-            img: '/src/views/Client/home/images/imgalbum4.png',
-            url: 'https://www.youtube.com/embed/VbqTux0AJr0',
-          },
-        ],
-      };
+import pausesvg from '@public/icon/pause.svg.vue';
+import imgflim1 from '../images/imgalbum1.jpg'
+import imgflim2 from '../images/imgalbum2.png'
+import imgflim3 from '../images/imgalbum3.png'
+import imgflim4 from '../images/imgalbum4.png'
+export default {
+  components: { pausesvg },
+  data() {
+    return {
+      showPopUp: false,
+      url: '',
+      dataclip: [
+        {
+          id: 1,
+          img: imgflim1,
+          url: 'https://www.youtube.com/embed/sEdlWPbjgsg',
+        },
+        {
+          id: 2,
+          img: imgflim2,
+          url: 'https://www.youtube.com/embed/2CLp4rKHvx8',
+        },
+        {
+          id: 3,
+          img: imgflim3,
+          url: 'https://www.youtube.com/embed/wwyiBgNjBrE',
+        },
+        {
+          id: 4,
+          img: imgflim4,
+          url: 'https://www.youtube.com/embed/VbqTux0AJr0',
+        },
+      ],
+    };
+  },
+  methods: {
+    ShowPopUp(url) {
+      this.showPopUp = !this.showPopUp;
+      console.log(this.dataclip);
+      this.url = url;
     },
-    methods: {
-      ShowPopUp(url) {
-        this.showPopUp = !this.showPopUp;
-        console.log(this.dataclip);
-        this.url = url;
-      },
-    },
-  };
+  },
+};
 </script>
 
 <style scoped>
-  .bg {
-  }
+.bg {}
 </style>

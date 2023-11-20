@@ -66,48 +66,50 @@
           role="tabpanel"
           aria-labelledby="tabs-home-tab"
           data-te-tab-active>
-          <div
-            v-for="image in imagePsc"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              :id="image.id"
+              v-for="image in imagePsc"
               :key="image.id"
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                :id="image.id"
+                :key="image.id"
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimagePsc, imagePsc)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
@@ -119,154 +121,162 @@
           id="tabs-profile"
           role="tabpanel"
           aria-labelledby="tabs-profile-tab">
-          <div
-            v-for="image in imageBaby"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              v-for="image in imageBaby"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :key="image.id"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimageBaby, imageBaby)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
             Xem thêm
           </button>
         </div>
+
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-messages"
           role="tabpanel"
           aria-labelledby="tabs-profile-tab">
-          <div
-            v-for="image in imageCouple"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              v-for="image in imageCouple"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :key="image.id"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimageCouple, imageCouple)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
             Xem thêm
           </button>
         </div>
+
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-contact"
           role="tabpanel"
           aria-labelledby="tabs-contact-tab">
-          <div
-            v-for="image in imagePreWed"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-5': image.visible }"
-              :key="image.id">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              v-for="image in imagePreWed"
+              :key="image.id"
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :class="{ 'col-start-3 col-end-5': image.visible }"
+                :key="image.id">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimagePreWed, imagePreWed)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
@@ -280,18 +290,25 @@
 
 <script>
   import { Tab, Lightbox, initTE } from 'tw-elements';
+  import imgservice1 from '../images/imgalbum1.jpg';
+  import imgservice2 from '../images/imgalbum2.png';
+  import imgservice3 from '../images/imgalbum3.png';
+  import imgservice4 from '../images/imgalbum4.png';
+  import imgservice5 from '../images/imgalbum5.png';
+
   export default {
     data() {
       return {
+        show: false,
         index: false,
         images: [
           {
             id: 1,
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
             alt: 'Mô tả ảnh đã load trước đó',
             visible: false,
           },
@@ -299,11 +316,11 @@
         imagePsc: [
           {
             id: 1,
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
             alt: 'Mô tả ảnh đã load trước đó',
             visible: false,
           },
@@ -311,11 +328,11 @@
         imageBaby: [
           {
             id: 1,
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
             alt: 'Mô tả ảnh đã load trước đó',
             visible: false,
           },
@@ -323,11 +340,11 @@
         imageCouple: [
           {
             id: 1,
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
             alt: 'Mô tả ảnh đã load trước đó',
             visible: false,
           },
@@ -335,105 +352,105 @@
         imagePreWed: [
           {
             id: 1,
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
             alt: 'Mô tả ảnh đã load trước đó',
             visible: false,
           },
         ],
         dataimagePsc: [
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
         ],
         dataimageBaby: [
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
         ],
         dataimageCouple: [
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
         ],
         dataimagePreWed: [
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
           {
-            src: '/src/views/Client/home/images/imgalbum1.jpg',
-            src1: '/src/views/Client/home/images/imgalbum2.png',
-            src2: '/src/views/Client/home/images/imgalbum3.png',
-            src3: '/src/views/Client/home/images/imgalbum4.png',
-            src4: '/src/views/Client/home/images/imgalbum5.png',
+            src: imgservice1,
+            src1: imgservice2,
+            src2: imgservice3,
+            src3: imgservice4,
+            src4: imgservice5,
           },
         ],
       };
@@ -463,8 +480,20 @@
     },
     mounted() {
       initTE({ Tab, Lightbox });
+      this.show = true;
     },
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .list-enter-active,
+  .list-leave-active {
+    transition: all 0.5s ease;
+  }
+
+  .list-enter-from,
+  .list-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+</style>

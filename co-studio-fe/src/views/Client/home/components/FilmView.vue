@@ -40,6 +40,10 @@
 
 <script>
   import pausesvg from '@public/icon/pause.svg.vue';
+  import imgflim1 from '../images/imgalbum1.jpg';
+  import imgflim2 from '../images/imgalbum2.png';
+  import imgflim3 from '../images/imgalbum3.png';
+  import imgflim4 from '../images/imgalbum4.png';
   export default {
     components: { pausesvg },
     data() {
@@ -49,22 +53,22 @@
         dataclip: [
           {
             id: 1,
-            img: '/src/views/Client/home/images/imgalbum1.jpg',
+            img: imgflim1,
             url: 'https://www.youtube.com/embed/sEdlWPbjgsg',
           },
           {
             id: 2,
-            img: '/src/views/Client/home/images/imgalbum2.png',
+            img: imgflim2,
             url: 'https://www.youtube.com/embed/2CLp4rKHvx8',
           },
           {
             id: 3,
-            img: '/src/views/Client/home/images/imgalbum3.png',
+            img: imgflim3,
             url: 'https://www.youtube.com/embed/wwyiBgNjBrE',
           },
           {
             id: 4,
-            img: '/src/views/Client/home/images/imgalbum4.png',
+            img: imgflim4,
             url: 'https://www.youtube.com/embed/VbqTux0AJr0',
           },
         ],

@@ -1,12 +1,16 @@
 <template>
   <main>
-    <BannerHomeViewVue />
-    <AlbumHomeViewVue />
-    <ProminentView />
-    <ServiceViewVue id="service" />
-    <FilmViewVue />
-    <FeedbackViewVue />
-    <ContactViewVue id="contact" />
+    <Transition>
+      <div class="" v-if="show">
+        <BannerHomeViewVue />
+        <AlbumHomeViewVue />
+        <ProminentView />
+        <ServiceViewVue id="service" />
+        <FilmViewVue />
+        <FeedbackViewVue />
+        <ContactViewVue id="contact" />
+      </div>
+    </Transition>
   </main>
 </template>
 
@@ -28,7 +32,25 @@
       FeedbackViewVue,
       ContactViewVue,
     },
+    data() {
+      return {
+        show: false,
+      };
+    },
+    mounted() {
+      this.show = true;
+    },
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+  }
+</style>

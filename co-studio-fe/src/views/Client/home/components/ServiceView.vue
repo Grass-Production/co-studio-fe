@@ -66,48 +66,50 @@
           role="tabpanel"
           aria-labelledby="tabs-home-tab"
           data-te-tab-active>
-          <div
-            v-for="image in imagePsc"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              :id="image.id"
+              v-for="image in imagePsc"
               :key="image.id"
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                :id="image.id"
+                :key="image.id"
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimagePsc, imagePsc)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
@@ -119,154 +121,162 @@
           id="tabs-profile"
           role="tabpanel"
           aria-labelledby="tabs-profile-tab">
-          <div
-            v-for="image in imageBaby"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              v-for="image in imageBaby"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :key="image.id"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimageBaby, imageBaby)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
             Xem thêm
           </button>
         </div>
+
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-messages"
           role="tabpanel"
           aria-labelledby="tabs-profile-tab">
-          <div
-            v-for="image in imageCouple"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
+              v-for="image in imageCouple"
               :key="image.id"
-              :class="{ 'col-start-3 col-end-5': image.visible }">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :key="image.id"
+                :class="{ 'col-start-3 col-end-5': image.visible }">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimageCouple, imageCouple)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
             Xem thêm
           </button>
         </div>
+
         <div
           class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="tabs-contact"
           role="tabpanel"
           aria-labelledby="tabs-contact-tab">
-          <div
-            v-for="image in imagePreWed"
-            :key="image.id"
-            class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-            data-te-lightbox-init>
+          <TransitionGroup name="list" tag="ul">
             <div
-              class="col-start-1 col-end-3 row-start-1 row-end-3"
-              :class="{ 'col-start-3 col-end-5': image.visible }"
-              :key="image.id">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src"
-                alt="" />
-            </div>
+              v-for="image in imagePreWed"
+              :key="image.id"
+              class="mb-12 grid grid-cols-4 gap-8 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+              data-te-lightbox-init>
+              <div
+                class="col-start-1 col-end-3 row-start-1 row-end-3"
+                :class="{ 'col-start-3 col-end-5': image.visible }"
+                :key="image.id">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src"
+                  alt="" />
+              </div>
 
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src1"
-                alt="" />
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src1"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src2"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src3"
+                  alt="" />
+              </div>
+              <div class="">
+                <img
+                  class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
+                  :src="image.src4"
+                  alt="" />
+              </div>
             </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src2"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src3"
-                alt="" />
-            </div>
-            <div class="">
-              <img
-                class="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto w-full rounded"
-                :src="image.src4"
-                alt="" />
-            </div>
-          </div>
-          <!-- <img :src="image.src" :alt="image.alt"> -->
-          <!-- </div> -->
+            <!-- <img :src="image.src" :alt="image.alt"> -->
+            <!-- </div> -->
+          </TransitionGroup>
           <button
             @click="showMoreImages(dataimagePreWed, imagePreWed)"
             class="block mx-auto font-lato font-semibold text-base text-BrowColor py-4 px-10 outline outline-1 outline-BrowColor rounded">
@@ -289,6 +299,7 @@
   export default {
     data() {
       return {
+        show: false,
         index: false,
         images: [
           {
@@ -469,8 +480,20 @@
     },
     mounted() {
       initTE({ Tab, Lightbox });
+      this.show = true;
     },
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .list-enter-active,
+  .list-leave-active {
+    transition: all 0.5s ease;
+  }
+
+  .list-enter-from,
+  .list-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+</style>

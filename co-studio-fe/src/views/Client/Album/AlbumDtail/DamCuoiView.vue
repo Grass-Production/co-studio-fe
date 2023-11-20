@@ -1,7 +1,13 @@
 <template>
-  <BannerViewVue />
-  <HightlineViewVue :data="data" />
-  <AllalbumViewVue :data="data" />
+  <main>
+    <Transition>
+      <div class="" v-if="show">
+        <BannerViewVue />
+        <HightlineViewVue :data="data" />
+        <AllalbumViewVue :data="data" />
+      </div>
+    </Transition>
+  </main>
 </template>
 
 <script>
@@ -15,10 +21,24 @@
     components: { BannerViewVue, HightlineViewVue, AllalbumViewVue },
     data() {
       return {
+        show: false,
         data: Concepts,
       };
+    },
+    mounted() {
+      this.show = true;
     },
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+  }
+</style>

@@ -5,34 +5,26 @@
       <h4 class="font-lato text-xl font-light text-BrowColor">100% thực hiện bởi Cỏ Studio</h4>
     </div>
     <div class=" ">
-      <swiper
-        ref="mySwiper"
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :loop="true"
-        :pagination="{
-          clickable: true,
-          dynamicBullets: true,
-          dynamicMainBullets: 1,
-        }"
-        :navigation="true"
-        :modules="modules"
-        class="mySwiper h-[45vh]">
+      <swiper ref="mySwiper" :slidesPerView="3" :spaceBetween="30" :loop="true" :pagination="{
+        clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 1,
+      }" :navigation="true" :modules="modules" class="mySwiper h-[45vh]">
         <swiper-slide v-for="x in data[0][category]">
           <router-link :to="`${urlPath}/${x.name}`">
             <div class="grid grid-cols-4 h-[40vh] rounded-2xl">
-              <div
-                :style="{ backgroundImage: 'url(' + x.imgbg + ')' }"
-                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[40%]"></div>
-              <div
-                :style="{ backgroundImage: 'url(' + x.imgbg2 + ')' }"
-                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[30%]"></div>
-              <div
-                :style="{ backgroundImage: 'url(' + x.imgbg3 + ')' }"
-                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[15%]"></div>
-              <div
-                :style="{ backgroundImage: 'url(' + x.imgbg4 + ')' }"
-                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[0]"></div>
+              <div :style="{ backgroundImage: 'url(' + x.imgbg1 + ')' }"
+                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[40%]">
+              </div>
+              <div :style="{ backgroundImage: 'url(' + x.imgbg2 + ')' }"
+                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[30%]">
+              </div>
+              <div :style="{ backgroundImage: 'url(' + x.imgbg3 + ')' }"
+                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[15%]">
+              </div>
+              <div :style="{ backgroundImage: 'url(' + x.imgbg4 + ')' }"
+                class="absolute hover:w-full hover:z-10 hover:left-0 z-0 transition-all duration-[0.4s] ease-in-out hover:delay-[0.2s] w-[60%] h-[40vh] rounded-2xl bg-no-repeat bg-center bg-cover left-[0]">
+              </div>
             </div>
           </router-link>
         </swiper-slide>
@@ -41,81 +33,81 @@
   </main>
 </template>
 <script>
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  import { Pagination, Navigation } from 'swiper/modules';
-  import { AlbumAll } from '@/constants/index.js';
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination, Navigation } from 'swiper/modules';
+import { AlbumAll } from '@/constants/index.js';
 
-  // Import Swiper styles
-  import 'swiper/css';
-  import 'swiper/css/pagination';
-  import 'swiper/css/navigation';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-  export default {
-    components: {
-      urlPath: '',
-      category: '',
-      Swiper,
-      SwiperSlide,
+export default {
+  components: {
+    urlPath: '',
+    category: '',
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      modules: [Pagination, Navigation],
+      albums: AlbumAll,
+    };
+  },
+  props: {
+    data: Array,
+  },
+  methods: {
+    GetCategory() {
+      var path = this.urlPath;
+      var parts = path.split('/');
+      this.category = parts[parts.length - 1];
     },
-    data() {
-      return {
-        modules: [Pagination, Navigation],
-        albums: AlbumAll,
-      };
-    },
-    props: {
-      data: Array,
-    },
-    methods: {
-      GetCategory() {
-        var path = this.urlPath;
-        var parts = path.split('/');
-        this.category = parts[parts.length - 1];
-      },
-    },
-    mounted() {
-      this.urlPath = window.location.pathname;
-      this.GetCategory();
-    },
-  };
+  },
+  beforeMount() {
+    this.urlPath = window.location.pathname;
+    this.GetCategory();
+  },
+};
 </script>
 
 <style>
-  .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    opacity: 1;
-    background: #e4d0d0;
-  }
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: #e4d0d0;
+}
 
-  .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #3f1d1f;
-  }
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #3f1d1f;
+}
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 3.5rem;
-    height: 3.5rem;
-    color: #e4d0d0;
-    transition:
-      scale 0.4s,
-      color 0.4s;
-  }
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #e4d0d0;
+  transition:
+    scale 0.4s,
+    color 0.4s;
+}
 
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    color: #3f1d1f;
-    transform: scale(1.8);
-  }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #3f1d1f;
+  transform: scale(1.8);
+}
 
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 </style>
